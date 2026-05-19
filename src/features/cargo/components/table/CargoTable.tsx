@@ -5,12 +5,12 @@ import type { CargoItem } from "@/types/cargo";
 import type { AppLanguage } from "@/lib/i18n/i18n";
 import { useCargoLikes } from "@/features/cargo/hooks/useCargoLikes";
 import {
-  macMobileCardList,
-  macTableBody,
-  macTableHead,
-  macTableHeadCell,
-  macTablePanel,
-} from "@/lib/styles/macos-controls";
+  mobileCardList,
+  tableBody,
+  tableHead,
+  tableHeadCell,
+  tablePanel,
+} from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 import { CargoMobileCard } from "./CargoMobileCard";
 import { CargoRow } from "./CargoRow";
@@ -26,21 +26,21 @@ export function CargoTable({ items, language }: CargoTableProps) {
   const { isLiked, toggleLike } = useCargoLikes();
 
   return (
-    <section className={macTablePanel}>
+    <section className={tablePanel}>
       <div className="hidden overflow-x-auto lg:block">
         <table className="w-full min-w-[900px]">
-          <thead className={macTableHead}>
+          <thead className={tableHead}>
             <tr>
-              <th className={macTableHeadCell}>{t("table.from")}</th>
-              <th className={macTableHeadCell}>{t("table.to")}</th>
-              <th className={macTableHeadCell}>{t("table.price")}</th>
-              <th className={macTableHeadCell}>{t("table.cargoCol")}</th>
-              <th className={macTableHeadCell}>{t("table.transport")}</th>
-              <th className={macTableHeadCell}>{t("table.customer")}</th>
-              <th className={cn(macTableHeadCell, "w-[72px]")} />
+              <th className={tableHeadCell}>{t("table.from")}</th>
+              <th className={tableHeadCell}>{t("table.to")}</th>
+              <th className={tableHeadCell}>{t("table.price")}</th>
+              <th className={tableHeadCell}>{t("table.cargoCol")}</th>
+              <th className={tableHeadCell}>{t("table.transport")}</th>
+              <th className={tableHeadCell}>{t("table.customer")}</th>
+              <th className={cn(tableHeadCell, "w-[72px]")} />
             </tr>
           </thead>
-          <tbody className={macTableBody}>
+          <tbody className={tableBody}>
             {items.map((item) => (
               <CargoRow
                 key={item.id}
@@ -56,7 +56,7 @@ export function CargoTable({ items, language }: CargoTableProps) {
         </table>
       </div>
 
-      <div className={cn("lg:hidden", macMobileCardList)}>
+      <div className={cn("lg:hidden", mobileCardList)}>
         {items.map((item) => (
           <CargoMobileCard
             key={item.id}

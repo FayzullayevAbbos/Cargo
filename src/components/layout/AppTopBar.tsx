@@ -40,7 +40,7 @@ export function AppTopBar({
 
   return (
     <header className="flex h-12 shrink-0 items-center gap-2 border-b border-black/[0.08] bg-[#f5f5f7]/90  backdrop-blur-xl px-4">
-      {/* Sidebar collapse — macOS style */}
+      {/* Sidebar collapse toggle */}
       {showSidebarToggle && (
         <Button
           variant="ghost"

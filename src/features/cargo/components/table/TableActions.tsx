@@ -2,9 +2,9 @@
 
 import { Heart, Share2 } from "lucide-react";
 import {
-  macTableActionBtn,
-  macTableActionBtnActive,
-} from "@/lib/styles/macos-controls";
+  tableActionBtn,
+  tableActionBtnActive,
+} from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 
 interface TableActionsProps {
@@ -19,12 +19,12 @@ export function TableActions({ isLiked, onToggleLike }: TableActionsProps) {
         type="button"
         onClick={onToggleLike}
         aria-pressed={isLiked}
-        className={cn(macTableActionBtn, isLiked && macTableActionBtnActive)}
+        className={cn(tableActionBtn, isLiked && tableActionBtnActive)}
       >
         <Heart className={cn("size-3.5", isLiked && "fill-current")} />
         <span className="sr-only">Like</span>
       </button>
-      <button type="button" className={macTableActionBtn}>
+      <button type="button" className={tableActionBtn}>
         <Share2 className="size-3.5" />
         <span className="sr-only">Share</span>
       </button>

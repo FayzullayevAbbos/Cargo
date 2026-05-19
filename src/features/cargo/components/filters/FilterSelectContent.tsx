@@ -1,10 +1,9 @@
 "use client";
 
 import { SelectContent } from "@/components/ui/select";
-import { macSelectContent } from "./macos-styles";
+import { selectContent } from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 
-/** Select dropdown — always opens below trigger, same width */
 export function FilterSelectContent({
   className,
   children,
@@ -18,7 +17,7 @@ export function FilterSelectContent({
       align="start"
       sideOffset={4}
       alignItemWithTrigger={false}
-      className={cn(macSelectContent, "z-[200]", className)}
+      className={cn(selectContent, "z-[200]", className)}
     >
       {children}
     </SelectContent>

@@ -12,7 +12,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Input } from "@/components/ui/input";
-import { macControl } from "@/lib/styles/macos-controls";
+import { controlInput } from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 
 interface PageHeaderProps {
@@ -54,7 +54,7 @@ export function PageHeader({
           onChange={(e) => onSearchChange(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && onSearchSubmit?.()}
           placeholder={t("filters.searchPlaceholder")}
-          className={cn(macControl, "pl-8 shadow-none")}
+          className={cn(controlInput, "pl-8 shadow-none")}
         />
       </div>
     </div>

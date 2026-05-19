@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { FilterSelectContent } from "./FilterSelectContent";
-import { macSelectTrigger } from "./macos-styles";
+import { selectTrigger } from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 
 interface CitySelectProps {
@@ -45,7 +45,7 @@ export function CitySelect({
       value={value || "all"}
       onValueChange={(v) => onChange(!v || v === "all" ? "" : v)}
     >
-      <SelectTrigger id={id} className={cn(macSelectTrigger, "shadow-none")}>
+      <SelectTrigger id={id} className={cn(selectTrigger, "shadow-none")}>
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
       <FilterSelectContent>

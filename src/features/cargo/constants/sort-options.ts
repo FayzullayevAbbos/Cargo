@@ -6,7 +6,6 @@ export const SORT_OPTIONS: SortOption[] = [
   "updated_at:desc",
 ];
 
-/** i18n kalitlari — `:` i18next namespace ajratgichi bo‘lgani uchun alohida */
 export const SORT_LABEL_KEYS: Record<SortOption, string> = {
   "created_at:desc": "sort.createdAtDesc",
   "created_at:asc": "sort.createdAtAsc",

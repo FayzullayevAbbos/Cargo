@@ -21,7 +21,7 @@ export function PriceCell({ payment, method, t }: PriceCellProps) {
     );
   }
   return (
-    <p className="text-[13px] font-semibold text-[#007AFF]">
+    <p className="text-[13px] font-semibold text-sarbon-navy">
       {formatPayment(payment?.total_amount ?? null, payment?.total_currency ?? null)}
       {method && (
         <span className="ml-1 font-normal text-slate-500">{method}</span>

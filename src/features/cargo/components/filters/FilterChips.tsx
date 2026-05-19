@@ -9,7 +9,6 @@ interface FilterChipsProps {
   className?: string;
 }
 
-/** Renders chip buttons only — wrap with label row in FilterPanel */
 export function FilterChips({ chips, className }: FilterChipsProps) {
   if (chips.length === 0) return null;
 

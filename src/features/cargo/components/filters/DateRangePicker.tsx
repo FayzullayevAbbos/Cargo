@@ -12,7 +12,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { macSelectContent, macSelectTrigger } from "./macos-styles";
+import { selectContent, selectTrigger } from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 
 const LOCALES = { uz, en: enUS, ru } as const;
@@ -88,7 +88,7 @@ export function DateRangePicker({
           <Button
             variant="outline"
             className={cn(
-              macSelectTrigger,
+              selectTrigger,
               "relative justify-start gap-2 pr-7 font-normal shadow-none",
               !hasValue && "text-slate-400",
               hasValue && "text-slate-800",
@@ -123,7 +123,7 @@ export function DateRangePicker({
         )}
       </PopoverTrigger>
       <PopoverContent
-        className={cn(macSelectContent, "w-auto p-0")}
+        className={cn(selectContent, "w-auto p-0")}
         align="start"
       >
         <Calendar

@@ -39,6 +39,8 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-sarbon-navy: var(--sarbon-navy);
+  --color-sarbon-green: var(--sarbon-green);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -61,9 +63,9 @@
 :root {
   --background: #ececec;
   --foreground: oklch(0.145 0 0);
-  --sarbon-navy: #1e3a5f;
-  --sarbon-green: #22a06b;
-  --macos-accent: #007aff;
+  --sarbon-navy: #1a4a8c;
+  --sarbon-green: #7cc428;
+  --accent-primary: var(--sarbon-navy);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -88,7 +90,7 @@
   --radius: 0.625rem;
   --sidebar: #ebebeb;
   --sidebar-foreground: oklch(0.25 0 0);
-  --sidebar-primary: #007aff;
+  --sidebar-primary: var(--sarbon-navy);
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: rgba(0, 0, 0, 0.06);
   --sidebar-accent-foreground: oklch(0.25 0 0);

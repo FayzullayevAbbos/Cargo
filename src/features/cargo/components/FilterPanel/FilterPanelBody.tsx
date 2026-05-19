@@ -14,12 +14,12 @@ import {
   getTransportSelectItems,
 } from "@/features/cargo/utils/filterSelectOptions";
 import {
-  macFilterBody,
-  macFilterRow,
-  macFilterRow3,
-  macFilterRowDivider,
-  macSelectTrigger,
-} from "@/lib/styles/macos-controls";
+  filterBody,
+  filterRow,
+  filterRow3,
+  filterRowDivider,
+  selectTrigger,
+} from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 import { FilterSelectContent } from "../filters/FilterSelectContent";
 import { FilterField } from "../filters/FilterField";
@@ -48,8 +48,8 @@ export function FilterPanelBody({
   const sortItems = getSortSelectItems(t);
 
   return (
-    <div className={macFilterBody}>
-      <div className={cn(macFilterRow, macFilterRowDivider)}>
+    <div className={filterBody}>
+      <div className={cn(filterRow, filterRowDivider)}>
         <FilterField id="load-city" label={t("filters.loadCity")}>
           <CitySelect
             id="load-city"
@@ -82,7 +82,7 @@ export function FilterPanelBody({
           >
             <SelectTrigger
               id="transport"
-              className={cn(macSelectTrigger, "shadow-none")}
+              className={cn(selectTrigger, "shadow-none")}
             >
               <SelectValue placeholder={t("filters.transportPlaceholder")} />
             </SelectTrigger>
@@ -113,7 +113,7 @@ export function FilterPanelBody({
         </FilterField>
       </div>
 
-      <div className={macFilterRow3}>
+      <div className={filterRow3}>
         <FilterField id="date-range" label={t("filters.date")}>
           <DateRangePicker
             id="date-range"
@@ -154,7 +154,7 @@ export function FilterPanelBody({
               v && onUiFiltersChange({ sort: v as SortOption })
             }
           >
-            <SelectTrigger id="sort" className={cn(macSelectTrigger, "shadow-none")}>
+            <SelectTrigger id="sort" className={cn(selectTrigger, "shadow-none")}>
               <SelectValue placeholder={t("filters.sort")} />
             </SelectTrigger>
             <FilterSelectContent>

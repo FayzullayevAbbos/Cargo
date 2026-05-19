@@ -3,7 +3,7 @@
 import { ChevronDown, Filter, RotateCcw } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { macFilterHeader } from "@/lib/styles/macos-controls";
+import { filterHeader } from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 
 interface FilterPanelHeaderProps {
@@ -24,7 +24,7 @@ export function FilterPanelHeader({
   const { t } = useTranslation();
 
   return (
-    <div className={macFilterHeader}>
+    <div className={filterHeader}>
       <button
         type="button"
         onClick={onToggleExpanded}
@@ -35,7 +35,7 @@ export function FilterPanelHeader({
           {t("filters.title")}
         </span>
         {activeCount > 0 && (
-          <span className="rounded-md bg-[#007AFF]/10 px-1.5 py-px text-[11px] font-semibold text-[#007AFF] tabular-nums">
+          <span className="rounded-md bg-sarbon-navy/10 px-1.5 py-px text-[11px] font-semibold text-sarbon-navy tabular-nums">
             {activeCount}
           </span>
         )}

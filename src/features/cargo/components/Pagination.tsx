@@ -10,12 +10,12 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { FilterSelectContent } from "./filters/FilterSelectContent";
-import { macPaginationBar, macSelectTrigger } from "@/lib/styles/macos-controls";
+import { paginationBar, selectTrigger } from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 
 const LIMIT_OPTIONS = [10, 20, 50] as const;
 
-const macPageBtn =
+const pageButton =
   "inline-flex size-8 shrink-0 items-center justify-center rounded-md border border-black/[0.08] bg-white text-slate-700 shadow-none transition-colors hover:bg-black/[0.03] disabled:pointer-events-none disabled:opacity-40 sm:size-7";
 
 export interface PaginationProps {
@@ -50,7 +50,7 @@ export function Pagination({
   );
 
   return (
-    <nav className={macPaginationBar} aria-label="Pagination">
+    <nav className={paginationBar} aria-label="Pagination">
       <p
         className="max-w-22 truncate text-[11px] text-slate-500 sm:max-w-none sm:text-[12px]"
         title={totalLabel}
@@ -63,7 +63,7 @@ export function Pagination({
       <div className="flex items-center gap-0.5">
         <button
           type="button"
-          className={macPageBtn}
+          className={pageButton}
           onClick={() => onPageChange(page - 1)}
           disabled={!canPrev}
           aria-label={t("pagination.previous")}
@@ -83,7 +83,7 @@ export function Pagination({
 
         <button
           type="button"
-          className={macPageBtn}
+          className={pageButton}
           onClick={() => onPageChange(page + 1)}
           disabled={!canNext}
           aria-label={t("pagination.next")}
@@ -102,7 +102,7 @@ export function Pagination({
           <SelectTrigger
             aria-label={t("pagination.limit")}
             className={cn(
-              macSelectTrigger,
+              selectTrigger,
               "h-7 w-20 px-1.5 text-[12px] shadow-none sm:w-14",
             )}
           >

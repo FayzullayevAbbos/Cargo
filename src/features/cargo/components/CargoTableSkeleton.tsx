@@ -1,24 +1,24 @@
 "use client";
 
 import {
-  macMobileCard,
-  macMobileCardList,
-  macTableHead,
-  macTableHeadCell,
-  macTablePanel,
-} from "@/lib/styles/macos-controls";
+  mobileCard,
+  mobileCardList,
+  tableHead,
+  tableHeadCell,
+  tablePanel,
+} from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 
 export function CargoTableSkeleton({ rows = 5 }: { rows?: number }) {
   return (
-    <section className={macTablePanel} aria-busy aria-label="Loading">
-      <div className={cn("hidden lg:block", macTableHead)}>
+    <section className={tablePanel} aria-busy aria-label="Loading">
+      <div className={cn("hidden lg:block", tableHead)}>
         <div className="grid grid-cols-7 gap-3 px-3.5 py-2">
           {Array.from({ length: 7 }).map((_, i) => (
             <div
               key={i}
               className={cn(
-                macTableHeadCell,
+                tableHeadCell,
                 "h-3 w-14 animate-pulse rounded bg-black/[0.06] p-0",
               )}
             />
@@ -43,9 +43,9 @@ export function CargoTableSkeleton({ rows = 5 }: { rows?: number }) {
         ))}
       </div>
 
-      <div className={cn("lg:hidden", macMobileCardList)}>
+      <div className={cn("lg:hidden", mobileCardList)}>
         {Array.from({ length: Math.min(rows, 4) }).map((_, row) => (
-          <article key={row} className={cn(macMobileCard, "space-y-3")}>
+          <article key={row} className={cn(mobileCard, "space-y-3")}>
             <div className="flex justify-between gap-3">
               <div className="h-5 w-28 animate-pulse rounded-md bg-black/[0.06]" />
               <div className="flex gap-1">

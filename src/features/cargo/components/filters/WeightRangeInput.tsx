@@ -1,7 +1,7 @@
 "use client";
 
 import { Input } from "@/components/ui/input";
-import { macControl } from "./macos-styles";
+import { controlInput } from "@/lib/styles/control-styles";
 import { cn } from "@/lib/utils";
 
 interface WeightRangeInputProps {
@@ -16,7 +16,7 @@ interface WeightRangeInputProps {
 }
 
 const fieldClass = cn(
-  macControl,
+  controlInput,
   "rounded-none border-0 shadow-none focus-visible:ring-0",
 );
 

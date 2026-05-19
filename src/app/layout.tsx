@@ -12,6 +12,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Dispatcher Cargo | Sarbon",
   description: "Dispatcher cargo list panel",
+  icons: {
+    icon: "/srb.png",
+    apple: "/srb.png",
+  },
 };
 
 export default function RootLayout({

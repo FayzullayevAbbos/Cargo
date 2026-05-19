@@ -41,7 +41,7 @@ export function AppSidebar({
             ? "justify-center p-2.5"
             : "gap-2.5 px-2.5 py-2",
           active
-            ? "bg-[#007AFF] text-white shadow-sm"
+            ? "bg-sarbon-navy text-white shadow-sm"
             : "text-slate-700 hover:bg-black/[0.06] active:bg-black/[0.08]",
         )}
       >

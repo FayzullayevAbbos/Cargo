@@ -11,9 +11,9 @@ import {
   getTransportLabel,
 } from "@/utils/format";
 import {
-  macTableCell,
-  macTableRow,
-} from "@/lib/styles/macos-controls";
+  tableCell,
+  tableRow,
+} from "@/lib/styles/control-styles";
 import { CustomerCell } from "./cells/CustomerCell";
 import { PriceCell } from "./cells/PriceCell";
 import { RouteCell } from "./cells/RouteCell";
@@ -44,17 +44,17 @@ export function CargoRow({
   );
 
   return (
-    <tr className={macTableRow}>
-      <td className={macTableCell}>
+    <tr className={tableRow}>
+      <td className={tableCell}>
         <RouteCell point={load} locale={locale} />
       </td>
-      <td className={macTableCell}>
+      <td className={tableCell}>
         <RouteCell point={unload} locale={locale} />
       </td>
-      <td className={macTableCell}>
+      <td className={tableCell}>
         <PriceCell payment={payment} method={method} t={t} />
       </td>
-      <td className={macTableCell}>
+      <td className={tableCell}>
         <p className="text-[13px] font-medium text-slate-800">
           {formatWeightVolume(item.weight, item.volume)}
         </p>
@@ -62,7 +62,7 @@ export function CargoRow({
           {getCargoTypeName(item, language)}
         </p>
       </td>
-      <td className={macTableCell}>
+      <td className={tableCell}>
         <div className="flex items-start gap-1.5 text-slate-700">
           <Truck
             className="mt-0.5 size-3.5 shrink-0 text-slate-400"
@@ -73,10 +73,10 @@ export function CargoRow({
           </span>
         </div>
       </td>
-      <td className={macTableCell}>
+      <td className={tableCell}>
         <CustomerCell item={item} />
       </td>
-      <td className={macTableCell}>
+      <td className={tableCell}>
         <TableActions isLiked={isLiked} onToggleLike={onToggleLike} />
       </td>
     </tr>

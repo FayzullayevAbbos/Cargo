@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { DEFAULT_UI_FILTERS, type UIFilters } from "@/types/filters";
 import { buildActiveFilterChips } from "@/features/cargo/utils/buildFilterChips";
 import { getDateLocale } from "@/features/cargo/utils/dateLocales";
-import { macFilterPanel } from "@/lib/styles/macos-controls";
+import { filterPanel } from "@/lib/styles/control-styles";
 import { FilterChips } from "../filters/FilterChips";
 import {
   countActiveFilters,
@@ -57,7 +57,7 @@ export function FilterPanel({
   };
 
   return (
-    <section className={macFilterPanel}>
+    <section className={filterPanel}>
       <FilterPanelHeader
         activeCount={activeCount}
         hasActive={hasActive}
