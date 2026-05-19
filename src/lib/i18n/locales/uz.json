@@ -1,0 +1,104 @@
+{
+  "navSection": {
+    "main": "Asosiy",
+    "management": "Boshqaruv"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "cargo": "Yuklar",
+    "myCargo": "Mening yuklarim",
+    "offers": "Takliflar",
+    "trips": "Reyslar",
+    "driverManagers": "Haydovchi menejerlari",
+    "gps": "GPS kuzatuv",
+    "favorites": "Sevimlilar",
+    "notifications": "Bildirishnomalar",
+    "role": "Yuk menejeri",
+    "collapseSidebar": "Panelni yig'ish",
+    "expandSidebar": "Panelni ochish",
+    "openMenu": "Menyuni ochish"
+  },
+  "profile": {
+    "account": "Hisob",
+    "settings": "Sozlamalar",
+    "logout": "Chiqish"
+  },
+  "breadcrumb": {
+    "home": "Bosh sahifa",
+    "allCargo": "Barcha yuklar"
+  },
+  "filters": {
+    "title": "Filtrlar",
+    "reset": "Tozalash",
+    "options": "Qo'shimcha",
+    "dateActive": "Sana tanlangan",
+    "activeLabel": "Faol:",
+    "loadCity": "Yuklash shahri",
+    "unloadCity": "Tushirish shahri",
+    "transport": "Transport",
+    "weight": "Og'irlik (t)",
+    "date": "Sana",
+    "sort": "Saralash",
+    "fromPlaceholder": "Qayerdan",
+    "toPlaceholder": "Qayerga",
+    "transportPlaceholder": "Yuk turini tanlang",
+    "searchPlaceholder": "Yuk qidirish...",
+    "allCities": "Barcha shaharlar",
+    "allTransport": "Barcha transport",
+    "min": "Min",
+    "max": "Max",
+    "dateStart": "Boshlanish",
+    "dateEnd": "Tugash",
+    "hasOffers": "Takliflari bor",
+    "favorite": "Sevimli"
+  },
+  "sort": {
+    "createdAtDesc": "Yangi (yaratilgan sana bo'yicha)",
+    "createdAtAsc": "Eski (yaratilgan sana bo'yicha)",
+    "updatedAtDesc": "Yaqinda yangilangan"
+  },
+  "table": {
+    "from": "Qayerdan olish",
+    "to": "Qayerga",
+    "price": "Narx",
+    "cargoCol": "Yuk",
+    "transport": "Transport",
+    "customer": "Buyurtmachi",
+    "negotiable": "Kelishiladi",
+    "priceRequest": "Narx so'rovi"
+  },
+  "paymentMethods": {
+    "CASH": "Naqd",
+    "CARD": "Karta",
+    "INVOICE": "Hisob-faktura",
+    "ON_DELIVERY": "Yetkazib berishda"
+  },
+  "pagination": {
+    "previous": "Oldingi",
+    "next": "Keyingi",
+    "page": "Sahifa",
+    "of": "/",
+    "limit": "Ko'rsatish",
+    "total": "Jami: {{count}}"
+  },
+  "states": {
+    "errorTitle": "Xatolik yuz berdi",
+    "errorMessage": "Ma'lumotlarni yuklab bo'lmadi. Iltimos, qayta urinib ko'ring.",
+    "retry": "Qayta urinish",
+    "emptyTitle": "Yuklar topilmadi",
+    "emptyMessage": "Tanlangan filtrlar bo'yicha hech qanday yuk mavjud emas."
+  },
+  "footer": {
+    "useful": "Foydali",
+    "distance": "Masofani hisoblash",
+    "versions": "Versiyalar yangiliklari",
+    "contacts": "Kontaktlar va tariflar",
+    "about": "Sarbon tizimi haqida",
+    "contactInfo": "Kontakt ma'lumotlari",
+    "info": "Ma'lumot",
+    "privacy": "Maxfiylik siyosati",
+    "sitemap": "Sayt xaritasi",
+    "mobileApp": "Sarbon mobil ilovasi"
+  },
+  "language": "Til"
+}

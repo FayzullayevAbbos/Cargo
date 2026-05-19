@@ -1,0 +1,104 @@
+{
+  "navSection": {
+    "main": "Main",
+    "management": "Management"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "cargo": "Cargo",
+    "myCargo": "My cargo",
+    "offers": "Offers",
+    "trips": "Trips",
+    "driverManagers": "Driver managers",
+    "gps": "GPS tracking",
+    "favorites": "Favorites",
+    "notifications": "Notifications",
+    "role": "Cargo manager",
+    "collapseSidebar": "Collapse sidebar",
+    "expandSidebar": "Expand sidebar",
+    "openMenu": "Open menu"
+  },
+  "profile": {
+    "account": "Account",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "allCargo": "All cargo"
+  },
+  "filters": {
+    "title": "Filters",
+    "reset": "Reset",
+    "options": "Options",
+    "dateActive": "Date selected",
+    "activeLabel": "Active:",
+    "loadCity": "Loading city",
+    "unloadCity": "Unloading city",
+    "transport": "Transport",
+    "weight": "Weight (t)",
+    "date": "Date",
+    "sort": "Sort",
+    "fromPlaceholder": "From",
+    "toPlaceholder": "To",
+    "transportPlaceholder": "Select vehicle type",
+    "searchPlaceholder": "Search cargo...",
+    "allCities": "All cities",
+    "allTransport": "All transport",
+    "min": "Min",
+    "max": "Max",
+    "dateStart": "Start",
+    "dateEnd": "End",
+    "hasOffers": "Has offers",
+    "favorite": "Favorite"
+  },
+  "sort": {
+    "createdAtDesc": "Newest (by creation date)",
+    "createdAtAsc": "Oldest (by creation date)",
+    "updatedAtDesc": "Recently updated"
+  },
+  "table": {
+    "from": "Pickup",
+    "to": "Delivery",
+    "price": "Price",
+    "cargoCol": "Cargo",
+    "transport": "Transport",
+    "customer": "Customer",
+    "negotiable": "Negotiable",
+    "priceRequest": "Price request"
+  },
+  "paymentMethods": {
+    "CASH": "Cash",
+    "CARD": "Card",
+    "INVOICE": "Invoice",
+    "ON_DELIVERY": "On delivery"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "of",
+    "limit": "Show",
+    "total": "Total: {{count}}"
+  },
+  "states": {
+    "errorTitle": "Something went wrong",
+    "errorMessage": "Could not load data. Please try again.",
+    "retry": "Retry",
+    "emptyTitle": "No cargo found",
+    "emptyMessage": "No cargo matches the selected filters."
+  },
+  "footer": {
+    "useful": "Useful",
+    "distance": "Distance calculator",
+    "versions": "Version news",
+    "contacts": "Contacts & tariffs",
+    "about": "About Sarbon",
+    "contactInfo": "Contact information",
+    "info": "Information",
+    "privacy": "Privacy policy",
+    "sitemap": "Sitemap",
+    "mobileApp": "Sarbon mobile app"
+  },
+  "language": "Language"
+}

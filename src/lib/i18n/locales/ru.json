@@ -1,0 +1,104 @@
+{
+  "navSection": {
+    "main": "Основное",
+    "management": "Управление"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "cargo": "Грузы",
+    "myCargo": "Мои грузы",
+    "offers": "Предложения",
+    "trips": "Рейсы",
+    "driverManagers": "Менеджеры водителей",
+    "gps": "GPS отслеживание",
+    "favorites": "Избранное",
+    "notifications": "Уведомления",
+    "role": "Менеджер грузов",
+    "collapseSidebar": "Свернуть панель",
+    "expandSidebar": "Развернуть панель",
+    "openMenu": "Открыть меню"
+  },
+  "profile": {
+    "account": "Аккаунт",
+    "settings": "Настройки",
+    "logout": "Выйти"
+  },
+  "breadcrumb": {
+    "home": "Главная",
+    "allCargo": "Все грузы"
+  },
+  "filters": {
+    "title": "Фильтры",
+    "reset": "Сбросить",
+    "options": "Дополнительно",
+    "dateActive": "Дата выбрана",
+    "activeLabel": "Активные:",
+    "loadCity": "Город погрузки",
+    "unloadCity": "Город выгрузки",
+    "transport": "Транспорт",
+    "weight": "Вес (т)",
+    "date": "Дата",
+    "sort": "Сортировка",
+    "fromPlaceholder": "Откуда",
+    "toPlaceholder": "Куда",
+    "transportPlaceholder": "Выберите тип транспорта",
+    "searchPlaceholder": "Поиск груза...",
+    "allCities": "Все города",
+    "allTransport": "Весь транспорт",
+    "min": "Мин",
+    "max": "Макс",
+    "dateStart": "Начало",
+    "dateEnd": "Конец",
+    "hasOffers": "Есть предложения",
+    "favorite": "Избранное"
+  },
+  "sort": {
+    "createdAtDesc": "Новые (по дате создания)",
+    "createdAtAsc": "Старые (по дате создания)",
+    "updatedAtDesc": "Недавно обновлённые"
+  },
+  "table": {
+    "from": "Откуда",
+    "to": "Куда",
+    "price": "Цена",
+    "cargoCol": "Груз",
+    "transport": "Транспорт",
+    "customer": "Заказчик",
+    "negotiable": "Договорная",
+    "priceRequest": "Запрос цены"
+  },
+  "paymentMethods": {
+    "CASH": "Наличные",
+    "CARD": "Карта",
+    "INVOICE": "Счёт",
+    "ON_DELIVERY": "При доставке"
+  },
+  "pagination": {
+    "previous": "Назад",
+    "next": "Далее",
+    "page": "Страница",
+    "of": "из",
+    "limit": "Показать",
+    "total": "Всего: {{count}}"
+  },
+  "states": {
+    "errorTitle": "Произошла ошибка",
+    "errorMessage": "Не удалось загрузить данные. Попробуйте снова.",
+    "retry": "Повторить",
+    "emptyTitle": "Грузы не найдены",
+    "emptyMessage": "По выбранным фильтрам грузов нет."
+  },
+  "footer": {
+    "useful": "Полезное",
+    "distance": "Расчёт расстояния",
+    "versions": "Новости версий",
+    "contacts": "Контакты и тарифы",
+    "about": "О системе Sarbon",
+    "contactInfo": "Контактная информация",
+    "info": "Информация",
+    "privacy": "Политика конфиденциальности",
+    "sitemap": "Карта сайта",
+    "mobileApp": "Мобильное приложение Sarbon"
+  },
+  "language": "Язык"
+}
